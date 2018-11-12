@@ -9,9 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6d10f0-5808-4b5d-8e01-7d92bb038c81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="de6d10f0-5808-4b5d-8e01-7d92bb038c81" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="rs" value="39" />
+          <entry key="rs" value="40" />
           <entry key="toml" value="7" />
           <entry key="txt" value="2" />
         </counts>
@@ -39,13 +37,13 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Rust" value="39" />
+          <entry key="Rust" value="40" />
           <entry key="TOML file" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="rs" value="2470" />
+          <entry key="rs" value="2560" />
           <entry key="toml" value="46" />
           <entry key="txt" value="1" />
         </counts>
@@ -53,7 +51,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Rust" value="2470" />
+          <entry key="Rust" value="2560" />
           <entry key="TOML file" value="46" />
         </counts>
       </usages-collector>
@@ -83,16 +81,25 @@
         <entry file="file://$PROJECT_DIR$/main_tests/tests/e0027.rs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
-              <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="43" />
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0029.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="29" column="51" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0029.rs">
+        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0030.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="441">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -169,6 +176,8 @@
       <find>e0025</find>
       <find>e0027</find>
       <find>e0026</find>
+      <find>e0029</find>
+      <find>string</find>
     </findStrings>
     <replaceStrings>
       <replace>e0303</replace>
@@ -186,6 +195,8 @@
       <replace>e0026</replace>
       <replace>e0029</replace>
       <replace>e0027</replace>
+      <replace>e0030</replace>
+      <replace>STRING</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -224,6 +235,7 @@
         <option value="$PROJECT_DIR$/main_tests/tests/e0026.rs" />
         <option value="$PROJECT_DIR$/main_tests/tests/e0027.rs" />
         <option value="$PROJECT_DIR$/main_tests/tests/e0029.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0030.rs" />
       </list>
     </option>
   </component>
@@ -302,6 +314,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="988" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940171" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="1" sideWeight="0.50598294" side_tool="true" visible="true" weight="0.25767368" />
@@ -515,14 +528,21 @@
     <entry file="file://$PROJECT_DIR$/main_tests/tests/e0027.rs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="43" />
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main_tests/tests/e0029.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="416">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0030.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

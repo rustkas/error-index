@@ -39,8 +39,7 @@ mod tests {
         match thing {
             Thing { x, y } => {
                 println!("{} {}", x, y);
-            }
-            // _ => {}
+            } // _ => {}
         }
     }
 
