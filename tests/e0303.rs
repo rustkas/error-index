@@ -24,16 +24,16 @@ mod tests {
     fn with_error() {
         // TODO uncomment comments below
         match Some("hi".to_string()) {
-//            ref op_string_ref @ Some(s) => {},
-            ref _op_string_ref => {}, // TODO comment this line
-     //       None => {},
+            //            ref op_string_ref @ Some(s) => {},
+            ref _op_string_ref => {} // TODO comment this line
+                                     //       None => {},
         }
     }
 
     #[test]
     fn without_error1() {
         match Some("hi".to_string()) {
-            ref _op_string_ref => {}, // TODO comment this line
+            ref _op_string_ref => {} // TODO comment this line
         }
     }
 
@@ -57,8 +57,8 @@ mod tests {
     #[test]
     fn without_error3() {
         match Some("hi".to_string()) {
-            Some(_s) => {},
-            None => {},
+            Some(_s) => {}
+            None => {}
         }
     }
 

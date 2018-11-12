@@ -3,9 +3,9 @@
 /*
 cargo test --test e0010
 cargo test --test e0010 with_error
-cargo test --test e0010 with_error2
+
 cargo test --test e0010 without_error1
-cargo test --test e0010 without_error2
+
 */
 
 /*
@@ -14,23 +14,21 @@ lifetime of a program. Creating a boxed value allocates memory on the heap at ru
 and therefore cannot be done at compile time. Erroneous code example:
 */
 
-
+// See also E0391
 #[cfg(test)]
 mod tests {
 
     #[test]
     fn with_error() {
 
-// TODO: uncomment below
+        // TODO: uncomment below
         // const CON : Box<i32> = box 0;
         //  static CON : Box<i32> = box 0;
     }
 
-
     #[test]
     fn without_error1() {
-        let _con : Box<i32> = box 0;
+        let _con: Box<i32> = box 0;
     }
-
 
 }
