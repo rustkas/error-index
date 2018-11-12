@@ -28,7 +28,6 @@ mod tests {
         let x = Terminator::HastaLaVistaBaby;
 
         match x {
-            // error: non-exhaustive patterns: `HastaLaVistaBaby` not covered
             // TODO remove one arm or all of them
             Terminator::HastaLaVistaBaby => {}
             Terminator::TalkToMyHand => {}

@@ -12,8 +12,6 @@ This error is typically fixed by adding one or more cases to the match expressio
 #[cfg(test)]
 mod tests {
 
-    // This error provide E0004 error message
-
     #[test]
     //#[ignore]
     fn with_error() {

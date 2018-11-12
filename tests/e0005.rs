@@ -20,7 +20,7 @@ mod tests {
         // TODO uncomment this line below
         // let Some(y) = x;
 
-        if let Some(_y1) = x{}
+        if let Some(_y1) = x {}
     }
 
     #[test]
@@ -28,9 +28,8 @@ mod tests {
         let x = Some(1);
 
         for _i in 0..3 {
-            if let Some(_y1) = x{}
+            if let Some(_y1) = x {}
         }
-
     }
 
     #[test]
@@ -40,7 +39,7 @@ mod tests {
         match x {
             Some(_y) => {
                 // do something
-            },
+            }
             None => {}
         }
     }
