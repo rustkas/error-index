@@ -9,10 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6d10f0-5808-4b5d-8e01-7d92bb038c81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tests/e0002.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e0002.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e0004.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e0004.rs" afterDir="false" />
-    </list>
+    <list default="true" id="de6d10f0-5808-4b5d-8e01-7d92bb038c81" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +29,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="rs" value="4" />
+          <entry key="rs" value="5" />
           <entry key="toml" value="1" />
           <entry key="txt" value="2" />
         </counts>
@@ -40,13 +37,13 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Rust" value="4" />
+          <entry key="Rust" value="5" />
           <entry key="TOML file" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="rs" value="470" />
+          <entry key="rs" value="550" />
           <entry key="toml" value="8" />
           <entry key="txt" value="1" />
         </counts>
@@ -54,7 +51,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Rust" value="470" />
+          <entry key="Rust" value="550" />
           <entry key="TOML file" value="8" />
         </counts>
       </usages-collector>
@@ -62,11 +59,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/e0004.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="400">
+              <caret line="31" column="49" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/e0005.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -101,6 +107,7 @@
         <option value="$PROJECT_DIR$/warning_messages.txt" />
         <option value="$PROJECT_DIR$/tests/e0002.rs" />
         <option value="$PROJECT_DIR$/tests/e0004.rs" />
+        <option value="$PROJECT_DIR$/tests/e0005.rs" />
       </list>
     </option>
   </component>
@@ -233,8 +240,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/e0004.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="400">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/e0005.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
         </state>
       </provider>
     </entry>
