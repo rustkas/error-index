@@ -20,10 +20,9 @@ mod tests {
         //        }
 
         // TODO comment the line below
-        trait FirstTrait{}
+        trait FirstTrait {}
         trait SecondTrait: FirstTrait {}
     }
-
 
     #[test]
     fn without_error1() {
