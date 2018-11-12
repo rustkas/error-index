@@ -35,8 +35,8 @@ mod tests {
                 // empty
             }
         }
-// it is forbidden
-//        let empty = Empty1;
-//        foo(empty);
+        // it is forbidden
+        //        let empty = Empty1;
+        //        foo(empty);
     }
 }

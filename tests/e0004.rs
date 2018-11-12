@@ -1,7 +1,8 @@
 /*
 cargo test --test e0004
 cargo test --test e0004 with_error
-cargo test --test e0004 without_error
+cargo test --test e0004 without_error1
+cargo test --test e0004 without_error2
 */
 
 /*
@@ -18,6 +19,7 @@ mod tests {
     #[test]
 
     fn with_error() {
+        #[allow(dead_code)]
         enum Terminator {
             HastaLaVistaBaby,
             TalkToMyHand,
@@ -25,22 +27,43 @@ mod tests {
 
         let x = Terminator::HastaLaVistaBaby;
 
-        match x { // error: non-exhaustive patterns: `HastaLaVistaBaby` not covered
+        match x {
+            // error: non-exhaustive patterns: `HastaLaVistaBaby` not covered
             // TODO remove one arm or all of them
+            Terminator::HastaLaVistaBaby => {}
             Terminator::TalkToMyHand => {}
         }
     }
 
-    #[allow(dead_code)]
     #[test]
-    fn without_error() {
-        enum Empty1 {}
-
-        fn foo(x: Empty1) {
-            match x {
-                // empty
-            }
+    fn without_error1() {
+        #[allow(dead_code)]
+        enum Terminator {
+            HastaLaVistaBaby,
+            TalkToMyHand,
         }
 
+        let x = Terminator::HastaLaVistaBaby;
+
+        match x {
+            Terminator::HastaLaVistaBaby => {}
+            Terminator::TalkToMyHand => {}
+        }
+    }
+
+    #[test]
+    fn without_error2() {
+        #[allow(dead_code)]
+        enum Terminator {
+            HastaLaVistaBaby,
+            TalkToMyHand,
+        }
+
+        let x = Terminator::HastaLaVistaBaby;
+
+        match x {
+            Terminator::HastaLaVistaBaby => {}
+            _ => {}
+        }
     }
 }
