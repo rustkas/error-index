@@ -1,4 +1,4 @@
-#![feature(unboxed_closures)]
+
 
 /*
 cargo test --test e0046

@@ -1,5 +1,3 @@
-#![feature(unboxed_closures)]
-
 /*
 cargo test --test e0049
 cargo test --test e0049 with_error -- --nocapture
