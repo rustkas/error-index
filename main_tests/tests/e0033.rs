@@ -19,24 +19,27 @@ https://doc.rust-lang.org/reference/types.html#trait-objects
 mod tests {
 
     trait SomeTrait {
-       fn method_one(&self);
-       fn method_two(&self);
+        fn method_one(&self);
+        fn method_two(&self);
     }
-    impl SomeTrait for &'static str{
-        fn method_one(&self){println!("{}", "one");}
-        fn method_two(&self){println!("{}", "two");}
+    impl SomeTrait for &'static str {
+        fn method_one(&self) {
+            println!("{}", "one");
+        }
+        fn method_two(&self) {
+            println!("{}", "two");
+        }
     }
 
     #[test]
     fn with_error() {
         let _trait_obj: &SomeTrait = &"some_value";
 
-
         // This tries to implicitly dereference to create an unsized local variable.
         //TODO uncomment the lines below
         //let &invalid = trait_obj;
-//        invalid.method_one();
-//        invalid.method_two();
+        //        invalid.method_one();
+        //        invalid.method_two();
     }
 
     #[test]
