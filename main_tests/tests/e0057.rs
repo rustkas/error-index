@@ -17,11 +17,11 @@ mod tests {
 
     #[test]
     fn with_error() {
-        let f:fn(_)->_ = |x| x * 3;
+        let f: fn(_) -> _ = |x| x * 3;
 
-      //  let a = f();        // invalid, too few parameters
-        let _b = f(4);       // this works!
-       // let c = f(2, 3);    // invalid, too many parameters
+        //  let a = f();        // invalid, too few parameters
+        let _b = f(4); // this works!
+                       // let c = f(2, 3);    // invalid, too many parameters
 
         fn foo<F: Fn()>(f: F) {
             f(); // this is valid, but f(3) would not work
@@ -32,8 +32,8 @@ mod tests {
     }
     #[test]
     fn without_error1() {
-        let f:fn(_)->_ = |x| x * 3;
-        let _b = f(4);       // this works!
+        let f: fn(_) -> _ = |x| x * 3;
+        let _b = f(4); // this works!
 
         fn foo<F: Fn()>(f: F) {
             f(); // this is valid, but f(3) would not work

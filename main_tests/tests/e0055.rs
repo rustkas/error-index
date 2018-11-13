@@ -25,16 +25,12 @@ mod tests {
             fn foo(&self) {}
         }
 
+        let _foo = Foo;
+        let ref_foo = &&Foo;
 
-            let _foo = Foo;
-            let ref_foo = &&Foo;
-
-            // error, reached the recursion limit while auto-dereferencing &&Foo
-            ref_foo.foo();
-
+        // error, reached the recursion limit while auto-dereferencing &&Foo
+        ref_foo.foo();
     }
     #[test]
-    fn without_error1() {
-
-    }
+    fn without_error1() {}
 }
