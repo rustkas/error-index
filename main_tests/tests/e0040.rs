@@ -14,7 +14,7 @@ drop is called automatically whenever a value goes out of scope.
 
 #[cfg(test)]
 mod tests {
-#[allow(dead_code)]
+    #[allow(dead_code)]
     struct Foo {
         x: i32,
     }
@@ -27,21 +27,18 @@ mod tests {
 
     #[test]
     fn with_error() {
-
-            let _x = Foo { x: -7 };
+        let _x = Foo { x: -7 };
         // TODO error is here
-          //  _x.drop(); // error: explicit use of destructor method
-        
+        //  _x.drop(); // error: explicit use of destructor method
     }
 
     #[test]
     fn without_error1() {
-        let  _x = Foo { x: -7 };
-
+        let _x = Foo { x: -7 };
     }
     #[test]
     fn without_error2() {
-        let  x = Foo { x: -7 };
+        let x = Foo { x: -7 };
         drop(x)
     }
 

@@ -14,21 +14,20 @@ Items are missing in a trait implementation.
 #[cfg(test)]
 mod tests {
 
-   #[test]
-    fn with_error(){
+    #[test]
+    fn with_error() {
+        trait Foo {
+            fn foo();
+        }
 
-       trait Foo {
-           fn foo();
-       }
+        struct Bar;
 
-       struct Bar;
-
-      // impl Foo for Bar {}
-// error: not all trait items implemented, missing: `foo`
-   }
+        // impl Foo for Bar {}
+        // error: not all trait items implemented, missing: `foo`
+    }
 
     #[test]
-    fn without_error1(){
+    fn without_error1() {
         trait Foo {
             fn foo();
         }

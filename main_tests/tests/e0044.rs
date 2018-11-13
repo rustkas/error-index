@@ -16,5 +16,4 @@ mod tests {
 
     //TODO provide examples for this error
 
-
 }

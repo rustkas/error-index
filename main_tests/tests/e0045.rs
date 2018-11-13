@@ -15,21 +15,20 @@ As such, variadic parameters can only be used with functions which are using the
 #[cfg(test)]
 mod tests {
 
-   #[test]
-    fn with_error(){
+    #[test]
+    fn with_error() {
 
+        //      extern "rust-call" { fn foo(x: u8); }
 
- //      extern "rust-call" { fn foo(x: u8); }
+        // or
 
-// or
-
-      // fn foo(x: u8) {}
-   }
+        // fn foo(x: u8) {}
+    }
 
     #[test]
-    fn without_error1(){
-//        extern "C" {
-//            fn foo (x: u8, ...);
-//        }
+    fn without_error1() {
+        //        extern "C" {
+        //            fn foo (x: u8, ...);
+        //        }
     }
 }

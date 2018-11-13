@@ -42,48 +42,45 @@ Rulls:
 #[cfg(test)]
 mod tests {
 
-
-
     #[test]
     fn with_error() {
-        trait Foo1 {
-
+        trait Foo1 {}
+        trait Foo2
+        where
+            Self: Sized,
+        {
         }
-        trait Foo2 where Self: Sized {
-
-        }
-//        let obj:Foo1 = Box<Foo1>::new(a);
- //       let obj:Box<Foo1>;
+        //        let obj:Foo1 = Box<Foo1>::new(a);
+        //       let obj:Box<Foo1>;
         //let obj1 = Box<Foo1>::new(Foo1);
-  //      println!("{:?}",obj1);
-//        let obj = Foo1;
-//        let obj1 = Box<Foo1>();
+        //      println!("{:?}",obj1);
+        //        let obj = Foo1;
+        //        let obj1 = Box<Foo1>();
     }
-#[test]
-    fn with_error1(){
+    #[test]
+    fn with_error1() {
         //TODO uncomment the conde below to produce the error E0038
-//        trait Trait {
-//            fn foo(&self) -> Self;
-//        }
-//
-//        fn call_foo(x: Box<Trait>) {
-//            let y = x.foo(); // What type is y?
-//            // ...
-//        }
+        //        trait Trait {
+        //            fn foo(&self) -> Self;
+        //        }
+        //
+        //        fn call_foo(x: Box<Trait>) {
+        //            let y = x.foo(); // What type is y?
+        //            // ...
+        //        }
     }
-
 
     #[test]
     fn with_error2() {
-//        trait Trait {
-//            fn foo(&self) -> Self where Self: Sized;
-//            // more functions
-//        }
-//
-//        fn call_foo(x: Box<Trait>) {
-//            let y = x.foo(); // What type is y?
-//            // ...
-//        }
+        //        trait Trait {
+        //            fn foo(&self) -> Self where Self: Sized;
+        //            // more functions
+        //        }
+        //
+        //        fn call_foo(x: Box<Trait>) {
+        //            let y = x.foo(); // What type is y?
+        //            // ...
+        //        }
     }
 
     #[test]
@@ -107,27 +104,27 @@ mod tests {
 
     #[test]
     fn without_error3() {
-//        trait Trait {
-//            fn foo<T>(&self, on: T) where Self: Sized;
-//            // more methods
-//        }
-//
-//        impl Trait for String {
-//            fn foo<T>(&self, on: T) {
-//                // implementation 1
-//            }
-//        }
-//
-//        impl Trait for u8 {
-//            fn foo<T>(&self, on: T) {
-//                // implementation 2
-//            }
-//        }
-//
-//        fn call_foo(thing: Box<Trait>) {
-//            thing.foo(true); // this could be any one of the 8 types above
-//            thing.foo(1);
-//            thing.foo("hello");
-//        }
+        //        trait Trait {
+        //            fn foo<T>(&self, on: T) where Self: Sized;
+        //            // more methods
+        //        }
+        //
+        //        impl Trait for String {
+        //            fn foo<T>(&self, on: T) {
+        //                // implementation 1
+        //            }
+        //        }
+        //
+        //        impl Trait for u8 {
+        //            fn foo<T>(&self, on: T) {
+        //                // implementation 2
+        //            }
+        //        }
+        //
+        //        fn call_foo(thing: Box<Trait>) {
+        //            thing.foo(true); // this could be any one of the 8 types above
+        //            thing.foo(1);
+        //            thing.foo("hello");
+        //        }
     }
 }
