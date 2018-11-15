@@ -28,11 +28,9 @@ mod tests {
         unsafe {
             printf("hello, C" as *const str as *const i8);
         }
-
     }
     #[test]
     fn without_error1() {
-
         use std::os::raw::{c_char, c_int};
         extern "C" {
             fn printf(_: *const c_char, ...) -> c_int;
