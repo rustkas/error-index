@@ -59,18 +59,23 @@ mod tests {
     }
 
     #[test]
+    //keep only one implementation
+    // cargo test --test e0034 without_error1 -- --nocapture
     fn without_error1() {
         trait Trait5 {
             fn empty();
         }
         impl Trait5 for Test {
             fn empty() {
-                println!("trait 5")
+                println!("--> trait 5")
             }
         }
         Test::empty();
     }
     #[test]
+    // using fully explicit naming of type and trait:
+    //
+    // cargo test --test e0034 without_error2 -- --nocapture
     fn without_error2() {
         trait Trait1 {
             fn foo();
@@ -94,6 +99,7 @@ mod tests {
         <Test as Trait2>::foo();
     }
     #[test]
+    // cargo test --test e0034 without_error3 -- --nocapture
     fn without_error3() {
         trait F {
             fn m(&self);

@@ -37,9 +37,9 @@ mod tests {
 
         // This tries to implicitly dereference to create an unsized local variable.
         //TODO uncomment the lines below
-        //let &invalid = trait_obj;
-        //        invalid.method_one();
-        //        invalid.method_two();
+        //        let &_invalid = _trait_obj;
+        //                invalid.method_one();
+        //                invalid.method_two();
     }
 
     #[test]
