@@ -2,7 +2,7 @@
 
 This project helps to understand how Rust compiler helps software developers by error messages which it provides.
 
-This project rrror by error provide examples how to reproduce error message.
+This project error by error (E0__) provide examples how to reproduce error message.
 
 ## How to study 
 1. Open a test.
