@@ -32,7 +32,7 @@ mod tests {
     use std::fmt::Debug;
 
     #[test]
-
+    //  cargo test --test e0038 with_error1 -- --nocapture
     // -- The trait cannot require Self: Sized
     fn with_error1() {
         {
@@ -74,86 +74,193 @@ mod tests {
             println!("{:?}", obj);
         }
     }
-    //    #[test]
-    //    fn with_error2() {
-    //        //TODO uncomment the code below to produce the error E0038
-    //
-    //        trait Foo where Self: Sized {
-    //
-    //        }
 
-    //                trait Trait {
-    //                    fn foo(&self) -> Self;
-    //                }
-    //
-    //                fn call_foo(x: Box<Trait>) {
-    //                    let y = x.foo(); // What type is y?
-    //                    // ...
-    //                }
-}
+    #[test]
+    // -- Method references the Self type in its arguments or return type
+    // cargo test --test e0038 with_error2 -- --nocapture
+    fn with_error2() {
+        trait Trait {
+            //Now, foo() can no longer be called on a trait object, but you will now be allowed
+            // to make a trait object, and that will be able to call any object-safe methods.
+            // With such a bound, one can still call foo() on types implementing that trait that
+            // aren't behind trait objects.
+            fn foo1(&self) -> Self
+            where
+                Self: Sized;
+            fn foo2(&mut self) -> Self;
+            //               fn foo2(&mut self) -> Self where Self: Sized;
+        }
 
-#[test]
-fn with_error3() {
-    //        trait Trait {
-    //            fn foo(&self) -> Self where Self: Sized;
-    //            // more functions
-    //        }
-    //
-    //        fn call_foo(x: Box<Trait>) {
-    //            let y = x.foo(); // What type is y?
-    //            // ...
-    //        }
-}
+        impl Trait for String {
+            fn foo1(&self) -> Self {
+                "hi".to_owned()
+            }
+            fn foo2(&mut self) -> Self {
+                "hi".to_owned()
+            }
+        }
 
-#[test]
-fn without_error_1() {
-    trait Trait {
-        fn foo(&self) -> Self;
+        impl Trait for u8 {
+            fn foo1(&self) -> Self {
+                1
+            }
+            fn foo2(&mut self) -> Self {
+                1
+            }
+        }
+        //TODO uncomment the code below to produce the error E0038
+        //            fn call_foo1(x: Box<Trait>) {
+        //                let y = x.foo1(); // What type is y?
+        //                y
+        //                // ...
+        //            }
+        //
+        //            fn call_foo2(mut x: Box<Trait>) {
+        //                let y = x.foo2(); // What type is y?
+        //                y
+        //                // ...
+        //            }
+        //
+        //            impl Trait for Box<Trait>{
+        //                fn foo1(&self) -> Self {
+        //                    Box::new(&self)
+        //                }
+        //                fn foo2(&mut self) -> Self {
+        //                    Box::new(&mut self)
+        //                }
+        //            }
     }
 
-    impl Trait for String {
-        fn foo(&self) -> Self {
-            "hi".to_owned()
+    #[test]
+    // cargo test --test e0038 with_error3 -- --nocapture
+    // Method has generic type parameters
+    fn with_error3() {
+        {
+            trait Trait {
+                fn foo(&self);
+            }
+
+            impl Trait for String {
+                fn foo(&self) {
+                    // implementation 1
+                }
+            }
+
+            impl Trait for u8 {
+                fn foo(&self) {
+                    // implementation 2
+                }
+            }
+        }
+        // At compile time each implementation of Trait will produce a table containing the various
+        // methods (and other items) related to the implementation.
+
+        // TODO uncomment the code below
+        //        {
+        //            fn foo<T>(x: T) {
+        //                // ...
+        //            }
+        //
+        //            println!("{}", foo::<u8>(1u8));
+        //            println!("{}", foo::<bool>(true));
+        //            println!("{}", foo::<String>("".to_string()));
+        //        }
+
+        {
+            trait Trait {
+                fn foo<T>(&self, _on: T);
+                // more methods
+            }
+
+            impl Trait for String {
+                fn foo<T>(&self, _on: T) {
+                    // implementation 1
+                }
+            }
+
+            impl Trait for u8 {
+                fn foo<T>(&self, _on: T) {
+                    // implementation 2
+                }
+            }
+        }
+
+        {
+            trait Trait {
+                fn foo<T>(&self, _on: T)
+                where
+                    Self: Sized;
+                // more methods
+            }
+
+            impl Trait for String {
+                fn foo<T>(&self, _on: T) {
+                    // implementation 1
+                }
+            }
+
+            impl Trait for u8 {
+                fn foo<T>(&self, _on: T) {
+                    // implementation 2
+                }
+            }
+
+            //TODO uncomment the code below to produce an error E0038
+
+            //            fn call_foo(thing: Box<Trait>) {
+            ////                thing.foo(true); // this could be any one of the 8 types above
+            ////                thing.foo(1);
+            ////                thing.foo("hello");
+            //                thing.foo("".to_string());
+            //            }
+            //            let string_value = "".to_string();
+            //            call_foo(Box::new(string_value));
         }
     }
 
-    impl Trait for u8 {
-        fn foo(&self) -> Self {
-            1
-        }
-    }
 }
 
 #[test]
-fn without_error3() {
-    //        trait Trait {
-    //            fn foo<T>(&self, on: T) where Self: Sized;
-    //            // more methods
-    //        }
-    //
-    //        impl Trait for String {
-    //            fn foo<T>(&self, on: T) {
-    //                // implementation 1
-    //            }
-    //        }
-    //
-    //        impl Trait for u8 {
-    //            fn foo<T>(&self, on: T) {
-    //                // implementation 2
-    //            }
-    //        }
-    //
-    //        fn call_foo(thing: Box<Trait>) {
-    //            thing.foo(true); // this could be any one of the 8 types above
-    //            thing.foo(1);
-    //            thing.foo("hello");
-    //        }
-}
-#[test]
-fn without_error4() {
+// --Method has no receiver
+pub fn with_error4() {
     trait Foo {
         fn foo() -> u8
         where
             Self: Sized;
+    }
+}
+
+#[test]
+// -- The trait cannot contain associated constants
+pub fn with_error5() {
+
+    // TODO: uncomment the code below to produce the error
+    //    trait Foo {
+    //        const X: i32;
+    //    }
+    //
+    //    impl Foo {}
+}
+
+#[test]
+// -- The trait cannot use Self as a type parameter in the supertrait listing
+fn with_error6() {
+    {
+        trait Super<A> {
+            fn get_a(&self) -> A; // note that this is object safe!
+        }
+        // TODO: uncomment the code below to produce the error
+        //        trait Trait: Super<Self> {
+        //        }
+        trait Trait {}
+        struct Foo;
+
+        impl Super<Foo> for Foo {
+            fn get_a(&self) -> Foo {
+                Foo {}
+            }
+        }
+
+        impl Trait for Foo {}
     }
 }

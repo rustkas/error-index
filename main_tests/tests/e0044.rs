@@ -15,5 +15,5 @@ You can't use type parameters on foreign items.
 mod tests {
 
     //TODO provide examples for this error
-
+    // extern { fn some_func<T>(x: T); }
 }

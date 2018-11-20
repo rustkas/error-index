@@ -17,7 +17,7 @@ mod tests {
         trait Foo {
             fn foo(&self, x: u8) -> bool;
         }
-        #[warn(dead_code)]
+        #[allow(dead_code)]
         struct Bar;
 
         // error: method `foo` has 1 parameter but the declaration in trait `Foo::foo`
@@ -33,13 +33,13 @@ mod tests {
         trait Foo {
             fn foo(&self, x: u8) -> bool;
         }
-        #[warn(dead_code)]
+        #[allow(dead_code)]
         struct Bar;
 
         // error: method `foo` has 1 parameter but the declaration in trait `Foo::foo`
         // has 2
         impl Foo for Bar {
-            fn foo(&self, x: u8) -> bool {
+            fn foo(&self, _x: u8) -> bool {
                 true
             }
         }

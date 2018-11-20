@@ -29,5 +29,20 @@ mod tests {
     }
 
     #[test]
-    fn without_error1() {}
+    fn without_error1() {
+        trait Foo {
+            fn foo<T: Default>(x: T) -> Self;
+        }
+
+        struct Bar;
+
+        // error: method `foo` has 0 type parameters but its trait declaration has 1
+        // type parameter
+        #[allow(non_camel_case_types)]
+        impl Foo for Bar {
+            fn foo<bool>(_x: bool) -> Self {
+                Bar
+            }
+        }
+    }
 }
