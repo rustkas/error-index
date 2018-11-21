@@ -55,9 +55,6 @@ mod tests {
 
         let x: bool = true;
         foo::<bool, bool>(x, x);
-
-
     }
-
 
 }
