@@ -1,4 +1,3 @@
-#![feature(repr_simd)]
 /*
 cargo test --test e0075
 cargo test --test e0075 with_error -- --nocapture
@@ -15,12 +14,12 @@ mod tests {
     #[test]
     fn with_error1() {
         {
-          //  type Foo<T> = u32; // error: type parameter `T` is unused
+            //  type Foo<T> = u32; // error: type parameter `T` is unused
         }
 
         // or:
         {
-        //    type Foo<A, B> = Box<A>; // error: type parameter `B` is unused
+            //    type Foo<A, B> = Box<A>; // error: type parameter `B` is unused
         }
     }
 

@@ -1,4 +1,3 @@
-#![feature(repr_simd)]
 /*
 cargo test --test e0075
 cargo test --test e0075 with_error -- --nocapture

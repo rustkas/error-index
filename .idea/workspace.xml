@@ -9,12 +9,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6d10f0-5808-4b5d-8e01-7d92bb038c81" name="Default Changelist" comment="Add improvements">
+    <list default="true" id="de6d10f0-5808-4b5d-8e01-7d92bb038c81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0038.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0038.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0044.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0044.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0049.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0049.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0050.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0050.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0076.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0076.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0080.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0080.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0081.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0081.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0084.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0084.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0085.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0085.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0088.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0088.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0089.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0089.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0090.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0090.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_tests/tests/e0091.rs" beforeDir="false" afterPath="$PROJECT_DIR$/main_tests/tests/e0091.rs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,33 +73,34 @@
     <session id="1394150061">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="rs" value="43" />
+          <entry key="rs" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Rust" value="43" />
+          <entry key="Rust" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="rs" value="1308" />
-          <entry key="txt" value="53" />
+          <entry key="rs" value="1723" />
+          <entry key="txt" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="53" />
-          <entry key="Rust" value="1308" />
+          <entry key="PLAIN_TEXT" value="63" />
+          <entry key="Rust" value="1723" />
         </counts>
       </usages-collector>
     </session>
@@ -102,28 +108,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0089.rs">
+        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0092.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="64">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0090.rs">
+        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0093.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="20" selection-start-line="16" selection-start-column="7" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="-112">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0094.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0106.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="923">
+              <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0091.rs">
+        <entry file="file://$PROJECT_DIR$/main_tests/tests/e0107.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="432">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -214,11 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/lib.rs" />
-        <option value="$PROJECT_DIR$/tests/e0015.rs" />
-        <option value="$PROJECT_DIR$/tests/e0017.rs" />
-        <option value="$PROJECT_DIR$/e00015_1/Cargo.toml" />
-        <option value="$PROJECT_DIR$/e00015_1/tests/e00015_1.rs" />
         <option value="$PROJECT_DIR$/e0015_1/tests/e0015_1.rs" />
         <option value="$PROJECT_DIR$/Cargo.toml" />
         <option value="$PROJECT_DIR$/e0017_1/tests/e0017_1.rs" />
@@ -256,15 +275,20 @@
         <option value="$PROJECT_DIR$/main_tests/tests/e0044.rs" />
         <option value="$PROJECT_DIR$/main_tests/tests/e0049.rs" />
         <option value="$PROJECT_DIR$/main_tests/tests/e0050.rs" />
-        <option value="$PROJECT_DIR$/main_tests/tests/e0076.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0091.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0090.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0089.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0088.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0085.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0084.rs" />
         <option value="$PROJECT_DIR$/main_tests/tests/e0081.rs" />
         <option value="$PROJECT_DIR$/main_tests/tests/e0080.rs" />
-        <option value="$PROJECT_DIR$/main_tests/tests/e0084.rs" />
-        <option value="$PROJECT_DIR$/main_tests/tests/e0085.rs" />
-        <option value="$PROJECT_DIR$/main_tests/tests/e0088.rs" />
-        <option value="$PROJECT_DIR$/main_tests/tests/e0089.rs" />
-        <option value="$PROJECT_DIR$/main_tests/tests/e0090.rs" />
-        <option value="$PROJECT_DIR$/main_tests/tests/e0091.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0076.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0092.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0093.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0094.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0106.rs" />
+        <option value="$PROJECT_DIR$/main_tests/tests/e0107.rs" />
       </list>
     </option>
   </component>
@@ -288,7 +312,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,6 +334,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,14 +345,14 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Users\tol_pc\CLionProjects\error_indexes_study\main_tests" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Users\tol_pc\CLionProjects\error-index\main_tests\tests" />
       <recent name="E:\Users\tol_pc\CLionProjects\error_indexes_study\main_tests\tests" />
       <recent name="E:\Users\tol_pc\CLionProjects\error_indexes_study\e0015_1\tests" />
       <recent name="E:\Users\tol_pc\CLionProjects\error_indexes_study\tests" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Users\tol_pc\CLionProjects\error_indexes_study\main_tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,20 +367,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cargo Command.Test e0091::tests">
-    <configuration name="Test e0091::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo Command.Test tests::without_error1 (1)">
+    <configuration name="Test e0106::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package main_tests --test e0091 tests" />
-      <option name="allFeatures" value="true" />
-      <option name="nocapture" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test tests::with_error1 (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package main_tests --test e0091 tests::with_error1 -- --exact" />
+      <option name="command" value="test --package main_tests --test e0106 tests" />
       <option name="allFeatures" value="true" />
       <option name="nocapture" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -366,7 +380,7 @@
     </configuration>
     <configuration name="Test tests::with_error1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package main_tests --test e0090 tests::with_error1 -- --exact" />
+      <option name="command" value="test --package main_tests --test e0107 tests::with_error1 -- --exact" />
       <option name="allFeatures" value="true" />
       <option name="nocapture" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -374,9 +388,19 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Test tests::without_error1 (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test tests::with_error2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package main_tests --test e0090 tests::without_error1 -- --exact" />
+      <option name="command" value="test --package main_tests --test e0106 tests::with_error2 -- --exact" />
+      <option name="allFeatures" value="true" />
+      <option name="nocapture" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test tests::without_error1 (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package main_tests --test e0107 tests::without_error1 -- --exact" />
       <option name="allFeatures" value="true" />
       <option name="nocapture" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -386,7 +410,7 @@
     </configuration>
     <configuration name="Test tests::without_error1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package main_tests --test e0089 tests::without_error1 -- --exact" />
+      <option name="command" value="test --package main_tests --test e0106 tests::without_error1 -- --exact" />
       <option name="allFeatures" value="true" />
       <option name="nocapture" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -395,52 +419,52 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Cargo Command.Test e0106::tests" />
+      <item itemvalue="Cargo Command.Test tests::with_error2" />
       <item itemvalue="Cargo Command.Test tests::without_error1" />
       <item itemvalue="Cargo Command.Test tests::with_error1" />
-      <item itemvalue="Cargo Command.Test tests::without_error1 (2)" />
-      <item itemvalue="Cargo Command.Test tests::with_error1 (1)" />
-      <item itemvalue="Cargo Command.Test e0091::tests" />
+      <item itemvalue="Cargo Command.Test tests::without_error1 (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo Command.Test e0091::tests" />
-        <item itemvalue="Cargo Command.Test tests::with_error1 (1)" />
-        <item itemvalue="Cargo Command.Test tests::without_error1 (2)" />
+        <item itemvalue="Cargo Command.Test tests::without_error1 (1)" />
         <item itemvalue="Cargo Command.Test tests::with_error1" />
+        <item itemvalue="Cargo Command.Test e0106::tests" />
         <item itemvalue="Cargo Command.Test tests::without_error1" />
+        <item itemvalue="Cargo Command.Test tests::with_error2" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_tests__without_error1_(1) - 2018.11.20 at 23h 25m 33s.xml">
-      <configuration name="Test tests::without_error1 (1)" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__with_error2 - 2018.11.21 at 22h 04m 06s.xml">
+      <configuration name="Test tests::with_error2" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__foo - 2018.11.20 at 23h 27m 23s.xml">
-      <configuration name="Test tests::foo" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__with_error2 - 2018.11.21 at 22h 04m 17s.xml">
+      <configuration name="Test tests::with_error2" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_without_error1 - 2018.11.20 at 23h 27m 33s.xml">
-      <configuration name="Test without_error1" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__with_error2 - 2018.11.21 at 22h 04m 57s.xml">
+      <configuration name="Test tests::with_error2" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_without_error1 - 2018.11.20 at 23h 27m 47s.xml">
-      <configuration name="Test without_error1" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__with_error2 - 2018.11.21 at 22h 05m 06s.xml">
+      <configuration name="Test tests::with_error2" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__without_error1 - 2018.11.20 at 23h 28m 05s.xml">
+    <history-entry file="Test_tests__with_error2 - 2018.11.21 at 22h 05m 21s.xml">
+      <configuration name="Test tests::with_error2" configurationId="CargoCommandRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_tests__without_error1 - 2018.11.21 at 22h 05m 41s.xml">
       <configuration name="Test tests::without_error1" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__without_error1 - 2018.11.20 at 23h 28m 20s.xml">
-      <configuration name="Test tests::without_error1" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_e0106__tests - 2018.11.21 at 22h 06m 43s.xml">
+      <configuration name="Test e0106::tests" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__without_error1 - 2018.11.20 at 23h 28m 33s.xml">
-      <configuration name="Test tests::without_error1" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__without_error1 - 2018.11.20 at 23h 28m 58s.xml">
-      <configuration name="Test tests::without_error1" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__with_error1 - 2018.11.20 at 23h 36m 06s.xml">
+    <history-entry file="Test_tests__with_error1 - 2018.11.21 at 22h 09m 10s.xml">
       <configuration name="Test tests::with_error1" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
-    <history-entry file="Test_tests__without_error1_(2) - 2018.11.20 at 23h 36m 22s.xml">
-      <configuration name="Test tests::without_error1 (2)" configurationId="CargoCommandRunConfiguration" />
+    <history-entry file="Test_tests__with_error1 - 2018.11.21 at 22h 10m 03s.xml">
+      <configuration name="Test tests::with_error1" configurationId="CargoCommandRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_tests__with_error1 - 2018.11.21 at 22h 10m 31s.xml">
+      <configuration name="Test tests::with_error1" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -456,19 +480,19 @@
     <frame x="-4" y="-4" width="1288" height="988" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4806338" visible="true" weight="0.28432956" />
-      <window_info id="Structure" order="1" sideWeight="0.5193662" side_tool="true" visible="true" weight="0.28432956" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4795222" visible="true" weight="0.28836834" />
+      <window_info id="Structure" order="1" sideWeight="0.52047783" side_tool="true" visible="true" weight="0.28836834" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3293979" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3293979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49919224" weight="0.3293979" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293979" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49919224" weight="0.3081464" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49919224" visible="true" weight="0.3081464" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.3293979" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -495,40 +519,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add improvements" />
+    <MESSAGE value="Add examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add examples" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0046.rs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.rustup/toolchains/nightly-x86_64-pc-windows-gnu/lib/rustlib/src/rust/src/libcore/str/mod.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="2281" column="39" selection-start-line="2281" selection-start-column="13" selection-end-line="2281" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e0017_1/tests/e0017_1.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0005.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="10" selection-start-line="2" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0004.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_tests/tests/e0008.rs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -653,16 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3600">
           <caret line="225" column="5" lean-forward="true" selection-start-line="225" selection-start-column="5" selection-end-line="225" selection-end-column="5" />
-          <folding>
-            <element signature="e#3053#3054#0" expanded="true" />
-            <element signature="e#3099#3100#0" expanded="true" />
-            <element signature="e#3140#3141#0" expanded="true" />
-            <element signature="e#3186#3187#0" expanded="true" />
-            <element signature="e#3262#3263#0" expanded="true" />
-            <element signature="e#3294#3295#0" expanded="true" />
-            <element signature="e#3335#3336#0" expanded="true" />
-            <element signature="e#3367#3368#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0075.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_tests/tests/e0073.rs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -788,72 +765,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0076.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0080.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0081.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0084.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0085.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0088.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0091.rs">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main_tests/tests/e0089.rs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0088.rs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0085.rs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0084.rs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0081.rs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0080.rs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0076.rs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0075.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state>
+          <caret selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main_tests/tests/e0090.rs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0092.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="20" selection-start-line="16" selection-start-column="7" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="64">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0091.rs">
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0093.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="-112">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0094.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0106.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="923">
+          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_tests/tests/e0107.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
         </state>
       </provider>
     </entry>
