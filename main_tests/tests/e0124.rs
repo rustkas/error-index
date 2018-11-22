@@ -1,5 +1,5 @@
 /*
-
+You declared two fields of a struct with the same name.
 */
 
 #[cfg(test)]
