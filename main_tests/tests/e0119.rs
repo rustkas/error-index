@@ -1,9 +1,4 @@
 /*
-
-
-*/
-
-/*
 There are conflicting trait implementations for the same type.
 */
 
@@ -39,7 +34,7 @@ mod tests {
     }
     #[allow(dead_code)]
     #[test]
-    //cargo test --test e01198 without_error1 -- --nocapture
+    //cargo test --test e0119 without_error1 -- --nocapture
     fn without_error1() {
         trait MyTrait {
             fn get(&self) -> usize;
@@ -59,9 +54,5 @@ mod tests {
         let result = value.get();
         println!("{}", result);
     }
-    #[allow(dead_code)]
-    #[test]
-    //cargo test --test e0118 without_error2 -- --nocapture
-    fn without_error2() {}
 
 }

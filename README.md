@@ -4,6 +4,8 @@ This project helps to understand how Rust compiler helps software developers by 
 
 This project error by error (E0__) provide examples how to reproduce error message.
 
+Improved examples describing compiler errors give a better understanding of how to write the correct code.
+
 ## How to study 
 1. Open a test.
 2. Uncomment the code 'TODO' line below.
