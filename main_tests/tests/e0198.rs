@@ -19,10 +19,10 @@ mod tests {
     #[allow(non_snake_case)]
     #[test]
     fn with_error1() {
-//        struct Foo;
-//
-//        // unsafe is unnecessary
-//        unsafe impl !Clone for Foo { }
+        //        struct Foo;
+        //
+        //        // unsafe is unnecessary
+        //        unsafe impl !Clone for Foo { }
     }
 
     #[allow(dead_code)]
@@ -33,14 +33,13 @@ mod tests {
 
         auto trait Enterprise {}
 
-        impl !Enterprise for Foo { }
+        impl !Enterprise for Foo {}
     }
 
     #[allow(dead_code)]
     #[allow(non_snake_case)]
     #[test]
     fn without_error2() {
-
         auto trait IsCool {}
 
         // Everyone knows that `String`s just aren't cool
@@ -51,16 +50,14 @@ mod tests {
 
         fn check_cool<C: IsCool>(_: C) {}
 
+        check_cool(42);
+        check_cool(false);
+        check_cool(MyStruct);
 
-            check_cool(42);
-            check_cool(false);
-            check_cool(MyStruct);
+        // the trait bound `std::string::String: IsCool` is not satisfied
+        // check_cool(String::new());
 
-            // the trait bound `std::string::String: IsCool` is not satisfied
-            // check_cool(String::new());
-
-            // the trait bound `std::string::String: IsCool` is not satisfied in `HasAString`
-            // check_cool(HasAString(String::new()));
-
+        // the trait bound `std::string::String: IsCool` is not satisfied in `HasAString`
+        // check_cool(HasAString(String::new()));
     }
 }

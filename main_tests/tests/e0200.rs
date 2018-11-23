@@ -9,12 +9,12 @@ mod tests {
     #[allow(non_snake_case)]
     #[test]
     fn with_error1() {
- //       struct Foo;
-//
-  //      unsafe trait Bar { }
-//
-    //    // this won't compile because Bar is unsafe and impl isn't unsafe
-//        impl Bar for Foo { }
+        //       struct Foo;
+        //
+        //      unsafe trait Bar { }
+        //
+        //    // this won't compile because Bar is unsafe and impl isn't unsafe
+        //        impl Bar for Foo { }
         // this will compile
         // safe impl Bar for Foo { }
 
@@ -26,11 +26,10 @@ mod tests {
     fn without_error1() {
         struct Foo;
 
-        unsafe trait Bar { }
+        unsafe trait Bar {}
 
         // this will compile
-        unsafe impl Bar for Foo { }
-
+        unsafe impl Bar for Foo {}
     }
 
 }

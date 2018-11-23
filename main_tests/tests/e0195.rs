@@ -9,18 +9,18 @@ mod tests {
     #[allow(non_snake_case)]
     #[test]
     fn with_error1() {
-//        trait Trait {
-//            fn bar<'a,'b:'a>(x: &'a str, y: &'b str);
-//        }
-//
-//        struct Foo;
-//
-//        impl Trait for Foo {
-//            fn bar<'a,'b>(x: &'a str, y: &'b str) {
-//                // error: lifetime parameters or bounds on method `bar`
-//                // do not match the trait declaration
-//            }
-//        }
+        //        trait Trait {
+        //            fn bar<'a,'b:'a>(x: &'a str, y: &'b str);
+        //        }
+        //
+        //        struct Foo;
+        //
+        //        impl Trait for Foo {
+        //            fn bar<'a,'b>(x: &'a str, y: &'b str) {
+        //                // error: lifetime parameters or bounds on method `bar`
+        //                // do not match the trait declaration
+        //            }
+        //        }
     }
 
     #[allow(dead_code)]
@@ -28,13 +28,14 @@ mod tests {
     #[test]
     fn without_error1() {
         trait Trait {
-            fn t<'a,'b:'a>(x: &'a str, y: &'b str);
+            fn t<'a, 'b: 'a>(x: &'a str, y: &'b str);
         }
 
         struct Foo;
 
         impl Trait for Foo {
-            fn t<'a,'b:'a>(_x: &'a str, _y: &'b str) { // ok!
+            fn t<'a, 'b: 'a>(_x: &'a str, _y: &'b str) {
+                // ok!
             }
         }
     }

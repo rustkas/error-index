@@ -11,12 +11,12 @@ mod tests {
     #[allow(non_snake_case)]
     #[test]
     fn with_error1() {
-//        struct Foo;
-//
-//        // this will cause this error
-//        unsafe impl Foo { }
-//        // converting it to this will fix it
-//        impl Foo { }
+        //        struct Foo;
+        //
+        //        // this will cause this error
+        //        unsafe impl Foo { }
+        //        // converting it to this will fix it
+        //        impl Foo { }
     }
 
     #[allow(dead_code)]
@@ -26,8 +26,8 @@ mod tests {
         struct Foo;
 
         // this will cause this error
-        impl Foo { }
+        impl Foo {}
         // converting it to this will fix it
-        impl Foo { }
+        impl Foo {}
     }
 }
