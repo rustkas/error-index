@@ -17,9 +17,24 @@
       <sourceFolder url="file://$MODULE_DIR$/e0015_1/benches" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/e0017_1/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/e0017_1/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/e0136/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/e0136/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/e0136/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/e0136/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/e0137/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/e0137/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/e0137/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/e0137/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/e0138/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/e0138/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/e0138/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/e0138/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/e00015_1/target" />
       <excludeFolder url="file://$MODULE_DIR$/e0015_1/target" />
       <excludeFolder url="file://$MODULE_DIR$/e0017_1/target" />
+      <excludeFolder url="file://$MODULE_DIR$/e0136/target" />
+      <excludeFolder url="file://$MODULE_DIR$/e0137/target" />
+      <excludeFolder url="file://$MODULE_DIR$/e0138/target" />
       <excludeFolder url="file://$MODULE_DIR$/main_tests/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>

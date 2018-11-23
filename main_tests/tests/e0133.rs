@@ -33,6 +33,7 @@ mod tests {
 
     These safety checks can be relaxed for a section of the code by wrapping the unsafe instructions
     with an unsafe block
+    See also https://doc.rust-lang.org/book/first-edition/unsafe.html
     */
     #[test]
     fn without_error1() {
