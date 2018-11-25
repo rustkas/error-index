@@ -11,11 +11,9 @@ mod tests {
     #[test]
     fn with_error1() {
 
-    //let _v: Vec(&str) = vec!["foo"];
-
+        //let _v: Vec(&str) = vec!["foo"];
 
     }
-
 
     #[allow(dead_code)]
     #[allow(non_snake_case)]
@@ -23,7 +21,5 @@ mod tests {
     fn without_error1() {
         let _v: Vec<&str> = vec!["foo"];
     }
-
-
 
 }
