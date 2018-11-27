@@ -1,4 +1,3 @@
-
 /*
 Declaring certain lifetime names in parameters is disallowed. For example, because the 'static
 lifetime is a special built-in lifetime name denoting the lifetime of the entire program
@@ -13,8 +12,8 @@ mod tests {
     #[test]
     fn with_error1() {
 
-//        // error, invalid lifetime parameter name `'static`
-//        fn foo<'static>(x: &'static str) { }
+        //        // error, invalid lifetime parameter name `'static`
+        //        fn foo<'static>(x: &'static str) { }
     }
 
     #[allow(dead_code)]
@@ -23,9 +22,8 @@ mod tests {
     #[test]
 
     fn without_error1() {
-
         // error, invalid lifetime parameter name `'static`
-        fn foo<'a>(x: &'a str) { }
+        fn foo<'a>(x: &'a str) {}
     }
 
 }

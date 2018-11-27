@@ -1,4 +1,3 @@
-
 /*
 The name for an item declaration conflicts with an external crate's name.
 https://doc.rust-lang.org/reference.html#statements

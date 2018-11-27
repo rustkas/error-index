@@ -13,10 +13,10 @@ mod tests {
     #[test]
     fn with_error1() {
 
-//        extern "C" {
-//            #[lang = "cake"] // error: unknown external lang item: `cake`
-//            fn cake();
-//        }
+        //        extern "C" {
+        //            #[lang = "cake"] // error: unknown external lang item: `cake`
+        //            fn cake();
+        //        }
     }
 
     #[allow(dead_code)]
@@ -24,9 +24,6 @@ mod tests {
     #[allow(unused_imports)]
     #[test]
 
-    fn without_error1() {
-
-
-    }
+    fn without_error1() {}
 
 }
