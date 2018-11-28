@@ -9,14 +9,13 @@ mod tests {
     #[allow(unused_imports)]
     #[test]
     fn with_error1() {
-//        fn foo<F: Fn(usize)>(x: F) { }
-//
-//
-//            // type mismatch: ... implements the trait `core::ops::Fn<(String,)>`,
-//            // but the trait `core::ops::Fn<(usize,)>` is required
-//            // [E0281]
-//            foo(|y: String| { });
-
+        //        fn foo<F: Fn(usize)>(x: F) { }
+        //
+        //
+        //            // type mismatch: ... implements the trait `core::ops::Fn<(String,)>`,
+        //            // but the trait `core::ops::Fn<(usize,)>` is required
+        //            // [E0281]
+        //            foo(|y: String| { });
 
     }
     #[allow(dead_code)]
@@ -24,28 +23,22 @@ mod tests {
     #[allow(unused_imports)]
     #[test]
     fn with_error2() {
-        fn foo<F: Fn(usize)>(_x: F) { }
-
+        fn foo<F: Fn(usize)>(_x: F) {}
 
         // type mismatch: ... implements the trait `core::ops::Fn<(String,)>`,
         // but the trait `core::ops::Fn<(usize,)>` is required
         // [E0281]
-        foo(|_y: usize| { });
-
+        foo(|_y: usize| {});
     }
     #[allow(dead_code)]
     #[allow(non_snake_case)]
     #[allow(unused_imports)]
     #[test]
-    fn without_error1() {
-
-    }
+    fn without_error1() {}
 
     #[allow(dead_code)]
     #[allow(non_snake_case)]
     #[allow(unused_imports)]
     #[test]
-    fn without_error2() {
-
-    }
+    fn without_error2() {}
 }
