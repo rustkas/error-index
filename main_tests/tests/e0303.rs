@@ -33,7 +33,7 @@ mod tests {
     #[test]
     fn without_error1() {
         match Some("hi".to_string()) {
-            ref _op_string_ref => {} // TODO comment this line
+            ref _op_string_ref => {}
         }
     }
 
