@@ -3,7 +3,7 @@ This error occurs when an attempt is made to use a variable after its contents h
 */
 
 // cargo test --test e0365 with_error1 -- --nocapture
-// cargo test --test e0365 without_error1 -- --nocapture
+// cargo test --test e0382 without_error2 -- --nocapture
 #[allow(dead_code)]
 #[cfg(test)]
 mod tests {
@@ -48,5 +48,17 @@ mod tests {
     #[allow(non_snake_case)]
     #[allow(unused_imports)]
     #[test]
-    fn without_error2() {}
+    fn without_error2() {
+        use std::cell::RefCell;
+        use std::rc::Rc;
+
+        struct MyStruct { s: u32 }
+
+
+            let x = Rc::new(RefCell::new(MyStruct{ s: 5u32 }));
+            let y = x.clone();
+            x.borrow_mut().s = 6;
+            println!("{}", x.borrow().s);
+
+    }
 }
