@@ -14,14 +14,14 @@ mod tests {
     #[allow(unused_imports)]
     #[test]
     pub fn with_error1() {
-//        trait Foo { fn foo(&self) { } }
-//        trait Bar: Foo { }
-//        trait Baz: Bar { }
-//
-//        impl Bar for Baz { } // error, `Baz` implements `Bar` by definition
-//        impl Foo for Baz { } // error, `Baz` implements `Bar` which implements `Foo`
-//        impl Baz for Baz { } // error, `Baz` (trivially) implements `Baz`
-//        impl Baz for Bar { } // Note: This is OK
+        //        trait Foo { fn foo(&self) { } }
+        //        trait Bar: Foo { }
+        //        trait Baz: Bar { }
+        //
+        //        impl Bar for Baz { } // error, `Baz` implements `Bar` by definition
+        //        impl Foo for Baz { } // error, `Baz` implements `Bar` which implements `Foo`
+        //        impl Baz for Baz { } // error, `Baz` (trivially) implements `Baz`
+        //        impl Baz for Bar { } // Note: This is OK
     }
 
     #[allow(non_snake_case)]
@@ -33,11 +33,13 @@ mod tests {
     #[allow(unused_imports)]
     #[test]
     fn without_error1() {
-        trait Foo { fn foo(&self) { } }
-        trait Bar: Foo { }
-        trait Baz: Bar { }
+        trait Foo {
+            fn foo(&self) {}
+        }
+        trait Bar: Foo {}
+        trait Baz: Bar {}
 
-        impl Baz for Bar { } // Note: This is OK
+        impl Baz for Bar {} // Note: This is OK
     }
 
     #[allow(non_snake_case)]

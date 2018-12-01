@@ -43,8 +43,6 @@ mod tests {
     #[allow(non_snake_case)]
     #[allow(unused_imports)]
     #[test]
-    fn without_error2() {
-
-    }
+    fn without_error2() {}
 
 }

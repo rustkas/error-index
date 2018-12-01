@@ -2,7 +2,6 @@
 /*
 The maximum value of an enum was reached, so it cannot be automatically set in the next enum value
 */
-
 // cargo test --test e0365 with_error1 -- --nocapture
 // cargo test --test e0365 without_error1 -- --nocapture
 // cargo test --test e0368 without_error2 -- --nocapture
@@ -15,12 +14,12 @@ mod tests {
     #[test]
     pub fn with_error1() {
 
-//        enum Foo {
-//            X = 0x7fffffffffffffff,
-//            Y, // error: enum discriminant overflowed on value after
-//            //        9223372036854775807: i64; set explicitly via
-//            //        Y = -9223372036854775808 if that is desired outcome
-//        }
+        //        enum Foo {
+        //            X = 0x7fffffffffffffff,
+        //            Y, // error: enum discriminant overflowed on value after
+        //            //        9223372036854775807: i64; set explicitly via
+        //            //        Y = -9223372036854775808 if that is desired outcome
+        //        }
     }
 
     #[allow(non_snake_case)]
@@ -32,7 +31,7 @@ mod tests {
     #[allow(unused_imports)]
     #[test]
     fn without_error1() {
-       //please set manually the next enum value or put the enum variant with the maximum value
+        //please set manually the next enum value or put the enum variant with the maximum value
         // at the end of the enum. Examples:
 
         enum Foo {
@@ -40,8 +39,6 @@ mod tests {
             Y = 0, // ok!
         }
     }
-
-
 
     #[allow(non_snake_case)]
     #[allow(unused_imports)]
