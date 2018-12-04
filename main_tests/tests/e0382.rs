@@ -13,12 +13,12 @@ mod tests {
     #[test]
     pub fn with_error1() {
 
-//        struct MyStruct { s: u32 }
-//
-//            let mut x = MyStruct{ s: 5u32 };
-//            let y = x;
-//            x.s = 6;
-//            println!("{}", x.s);
+        //        struct MyStruct { s: u32 }
+        //
+        //            let mut x = MyStruct{ s: 5u32 };
+        //            let y = x;
+        //            x.s = 6;
+        //            println!("{}", x.s);
 
     }
 
@@ -31,18 +31,15 @@ mod tests {
     #[allow(unused_imports)]
     #[test]
     fn without_error1() {
+        let s1 = String::from("hello");
 
-            let s1 = String::from("hello");
+        let len = calculate_length(&s1);
 
-            let len = calculate_length(&s1);
-
-            println!("The length of '{}' is {}.", s1, len);
-
+        println!("The length of '{}' is {}.", s1, len);
 
         fn calculate_length(s: &String) -> usize {
             s.len()
         }
-
     }
 
     #[allow(non_snake_case)]
@@ -52,13 +49,13 @@ mod tests {
         use std::cell::RefCell;
         use std::rc::Rc;
 
-        struct MyStruct { s: u32 }
+        struct MyStruct {
+            s: u32,
+        }
 
-
-            let x = Rc::new(RefCell::new(MyStruct{ s: 5u32 }));
-            let y = x.clone();
-            x.borrow_mut().s = 6;
-            println!("{}", x.borrow().s);
-
+        let x = Rc::new(RefCell::new(MyStruct { s: 5u32 }));
+        let y = x.clone();
+        x.borrow_mut().s = 6;
+        println!("{}", x.borrow().s);
     }
 }
